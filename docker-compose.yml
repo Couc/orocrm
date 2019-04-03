@@ -1,0 +1,10 @@
+# bo.orocrm.virtua.docker
+# Oro Backend : https://bo.orocrm.virtua.docker
+virtua_orocrm:
+  build: ./setup/docker/webserver
+  volumes:
+    - ./:/var/www/app/
+  environment:
+    DNSDOCK_IMAGE: virtua
+    DNSDOCK_NAME: orocrm
+    DNSDOCK_ALIAS: orocrm.virtua.docker
